@@ -9,5 +9,9 @@ def reverse_each_word(sentence)
   output[output.rindex(" ")] = ''
   output
   
-  sentence.collect 
+  reversed.collect do |word|
+    output << word.to_s.reverse + " " 
+  end
+  output[output.rindex(" ")] = ''
+  output
 end
