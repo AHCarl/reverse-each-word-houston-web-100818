@@ -6,5 +6,6 @@ def reverse_each_word(sentence)
   reversed.each do |word|
     output << word.to_s.reverse + " " 
   end
-  output[output.rindex(" ")]
+  output[output.rindex(" ")] = ''
+  output
 end
