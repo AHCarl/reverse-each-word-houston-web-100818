@@ -8,4 +8,6 @@ def reverse_each_word(sentence)
   end
   output[output.rindex(" ")] = ''
   output
+  
+  sentence.collect 
 end
